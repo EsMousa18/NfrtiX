@@ -1118,7 +1118,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Disable Dark Mode - Force Light Mode Only */
+/* Force Light Mode */
 @media (prefers-color-scheme: dark) {
     :root {
         color-scheme: light only;
@@ -1130,7 +1130,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Print Styles */
 @media print {
     .no-print {
         display: none;
