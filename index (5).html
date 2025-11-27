@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light only">
+    <title>nfrti X - Predictive Maintenance Revolution | Ancient Wisdom Meets Modern AI</title>
+    <meta name="description" content="nfrti X combines ancient Egyptian wisdom with cutting-edge AI for predictive maintenance. Prevent downtime, save costs, and revolutionize industrial operations.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nfrti-green': '#017E3A',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ensure mobile menu visibility control */
+        #mobile-menu.hidden {
+            display: none !important;
+        }
+        #mobile-menu:not(.hidden) {
+            display: block !important;
+        }
+    </style>
+    
+    <!-- Chart.js for interactive visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts - Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Kalam&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS Inline for above-the-fold content -->
+    <style>
+        :root{--nfrti-green:#017E3A;--nfrti-yellow:#FFD700;--nfrti-light-green:#017E3A}.font-inter{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}.text-nfrti-green{color:var(--nfrti-green)}.bg-nfrti-green{background-color:var(--nfrti-green)}.border-nfrti-green{border-color:var(--nfrti-green)}.hover\:bg-nfrti-green:hover{background-color:var(--nfrti-green)}.hover\:text-nfrti-green:hover{color:var(--nfrti-green)}html{scroll-behavior:smooth}header{backdrop-filter:blur(10px)}button{transition:all .3s ease}.floating-mascot{animation:float 3s ease-in-out infinite;cursor:pointer;transition:transform .3s ease}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    </style>
+    
+    <!-- Minified CSS Files - Deferred Loading -->
+    <link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/responsive.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/responsive.min.css">
+        <link rel="stylesheet" href="css/slider.min.css">
+    </noscript>
+</head>
+<body class="font-inter bg-white">
+    
+    <!-- Header -->
+    <header class="bg-white fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3 relative">
+                <img src="https://www.genspark.ai/api/files/s/IeFAjTmX" alt="nfrti X" class="h-12 w-auto object-contain" loading="lazy" id="header-logo">
+                <div class="logo-tooltip hidden" id="logo-tooltip">Successor of the sage nfrti</div>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-nfrti-green transition-colors">Home</a>
+                <a href="#heritage" class="text-gray-700 hover:text-nfrti-green transition-colors">Who's nfrti?</a>
+                <a href="#problem" class="text-gray-700 hover:text-nfrti-green transition-colors">The Maintenance Challenge</a>
+                <a href="#solution" class="text-gray-700 hover:text-nfrti-green transition-colors">The PdM Solution</a>
+            </div>
+            <div class="hidden md:flex items-center gap-4">
+                <div class="relative">
+                    <img src="https://i.ibb.co/3ZHs18z/Untitled-4.png" alt="nfrti X Mascot" class="h-24 w-auto object-contain cursor-pointer" id="header-mascot" loading="lazy">
+                    <div class="mascot-speech-bubble hidden" id="header-speech">
+                        Let's connect!
+                    </div>
+                </div>
+                <a href="#contact" class="cta-btn">
+                    <span class="default-text">Request a Demo</span>
+                    <span class="hover-text">Talk to Us</span>
+                </a>
+            </div>
+            <button class="md:hidden text-gray-700 p-2" id="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-4 pt-2 pb-4 space-y-2 bg-white border-t shadow-lg">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-[#017E3A10] hover:text-nfrti-green rounded transition-colors">Home</a>
+                <a href="#heritage" class="block px-3 py-2 text-gray-700 hover:bg-[#017E3A10] hover:text-nfrti-green rounded transition-colors">Who's nfrti?</a>
+                <a href="#problem" class="block px-3 py-2 text-gray-700 hover:bg-[#017E3A10] hover:text-nfrti-green rounded transition-colors">The Maintenance Challenge</a>
+                <a href="#solution" class="block px-3 py-2 text-gray-700 hover:bg-[#017E3A10] hover:text-nfrti-green rounded transition-colors">The PdM Solution</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+
+                    <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight custom-heading">
+                        Prevent Costly Downtime<br>
+                        <span class="text-nfrti-green">Predict Equipment Failures</span>
+                    </h1>
+                    <p class="text-xl text-black mb-8 leading-relaxed">
+                        <span class="font-normal text-gray-900">nfrti</span> <span class="text-nfrti-green font-normal">X</span> — Egypt's first end-to-end predictive maintenance solution for rotating equipment. IIoT vibration sensors and AI analytics that detect faults, diagnose root causes, and predict equipment failures.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8 font-semibold">
+                        Scalable - Reliable - Cost-effective
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="#contact" class="bg-nfrti-green text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center">
+                            <i class="fas fa-comments mr-2"></i>Talk to Us
+                        </a>
+                        <a href="#solution" class="border-2 border-nfrti-green text-nfrti-green px-8 py-4 rounded-lg font-semibold flex items-center justify-center">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="flex flex-wrap gap-8 text-sm">
+                        <div class="flex items-center">
+                            <div class="bg-[#FBBF03] text-white px-3 py-1 rounded-full font-semibold mr-3">10x ROI</div>
+                            <span class="text-gray-600">Return on Investment</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-[#017E3A] text-white px-3 py-1 rounded-full font-semibold mr-3">-70%</div>
+                            <span class="text-gray-600">Equipment Breakdowns</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <img src="https://i.ibb.co/Ngh3r3Vq/Untitled-1.png" alt="nfrti X Mascot - Installing Sensor on Pyramid" class="object-contain" style="width: 550px; height: 550px;" id="hero-mascot" loading="lazy">
+                        <div class="mascot-speech-bubble hidden" id="hero-speech">
+                            "Welcome to the wisdom of predictive maintenance! Have a look on what we offer"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section id="heritage">
+        <!-- Title Above Everything -->
+        <div class="heritage-title">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 custom-heading">Who's the maintenance sage nfrti?</h2>
+        </div>
+        
+        <!-- Background Container with Positioned Text -->
+        <div class="heritage-background-container">
+            <!-- Mascot Overlay on the Road (Desktop only) -->
+            <div class="heritage-mascot-overlay heritage-mascot-desktop">
+                <img src="https://i.ibb.co/QjYX4hm6/Adobe-Express-file-3.png" alt="nfrti X Mascot on Road" loading="lazy">
+            </div>
+            
+            <div class="container mx-auto px-4" style="position: relative; height: 100%;">
+                <!-- Heritage Text 1: Top left near pyramid -->
+                <div class="heritage-text-1">
+                    <p class="text-gray-900">
+                        In the court of Senefru, the ancient sage was renowned for one extraordinary gift: the ability to see what others could not — to predict the future.
+                    </p>
+                </div>
+                
+                <!-- Heritage Text 2: Top right above machines -->
+                <div class="heritage-text-2">
+                    <p class="text-gray-900">
+                        Thousands of years later, <strong>nfrti X</strong> carries forward this legacy. We bring the same prophetic clarity to industry through AI- and IIoT-powered analytics.
+                    </p>
+                </div>
+                
+                <!-- Heritage Text 3: Middle right next to machines -->
+                <div class="heritage-text-3">
+                    <p class="text-gray-900">
+                        Like our namesake who foresaw the rise of great kings and the restoration of prosperity, we help maintenance teams see equipment failures before they happen — transforming uncertainty into actionable foresight.
+                    </p>
+                </div>
+                
+                <!-- Background Image with Mascot for Mobile/Tablet -->
+                <div class="heritage-image-wrapper">
+                    <!-- Mascot Overlay on the Road (Mobile/Tablet) -->
+                    <div class="heritage-mascot-overlay">
+                        <img src="https://i.ibb.co/QjYX4hm6/Adobe-Express-file-3.png" alt="nfrti X Mascot on Road" loading="lazy">
+                    </div>
+                    <img src="https://i.ibb.co/cSykX6HC/Picsart-25-11-21-10-16-07-770.jpg" alt="nfrti Heritage Background" class="heritage-background-image" loading="lazy">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- The Modern Prophecy: Problem Section with Slider -->
+    <section id="problem" class="py-16 as-slider" data-settings='{"background_slideshow_gallery":[]}'>
+        <div class="container mx-auto px-4">
+            
+            <!-- Slider Title -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 custom-heading">Unplanned Downtime: A Costly Problem</h2>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="slider-content-wrapper">
+                
+                <!-- Changing Content Area -->
+                <div class="as-changing-widget">
+                    
+                    <!-- Slide 1 Content: Downtime Costs Chart -->
+                    <div class="slide-content">
+                        <div class="slide-inner">
+                            <div class="content-side">
+                                <div class="content-card bg-white rounded-xl p-8 shadow-lg">
+                                    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center custom-heading">Downtime Costs Per Industry</h3>
+                                    <div class="chart-container" style="height: 400px;">
+                                        <canvas id="downtimeChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Mascot for Slide 1 -->
+                            <div class="mascot-side mascot-slide-right">
+                                <img src="https://i.ibb.co/fGL6KBY2/Untitled-2.png" alt="nfrti X Mascot" class="mascot-image slider-mascot" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 Content: ROI Calculator -->
+                    <div class="slide-content">
+                        <div class="slide-inner slide-inner-reverse">
+                            <div class="content-side">
+                                <div class="content-card bg-white rounded-xl shadow-lg p-8">
+                                    <h3 class="text-3xl font-bold text-gray-900 mb-4 custom-heading">Calculate Your ROI</h3>
+                                    <p class="text-gray-600 mb-6">See how much you could save with nfrti X</p>
+                                    
+                                    <form id="roi-calculator" class="space-y-4">
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <div>
+                                                <label class="block text-sm font-medium text-gray-700 mb-1">Number of Pumps</label>
+                                                <input type="number" id="pump-count" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-nfrti-green" placeholder="10" value="10">
+                                            </div>
+                                            <div>
+                                                <label class="block text-sm font-medium text-gray-700 mb-1">Downtime Hours</label>
+                                                <input type="number" id="downtime-hours" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-nfrti-green" placeholder="400" value="400">
+                                            </div>
+                                            <div>
+                                                <label class="block text-sm font-medium text-gray-700 mb-1">Cost per Hour ($)</label>
+                                                <input type="number" id="hourly-cost" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-nfrti-green" placeholder="50000" value="50000">
+                                            </div>
+                                            <div>
+                                                <label class="block text-sm font-medium text-gray-700 mb-1">Industry</label>
+                                                <select id="industry" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-nfrti-green">
+                                                    <option value="fmcg">FMCG</option>
+                                                    <option value="paper">Paper</option>
+                                                    <option value="buildings">Buildings</option>
+                                                    <option value="metals">Metals</option>
+                                                    <option value="chemicals">Chemicals</option>
+                                                    <option value="pharma">Pharma</option>
+                                                    <option value="automotive">Automotive</option>
+                                                    <option value="custom">Custom</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <button type="button" id="calculate-roi" class="w-full bg-white text-gray-900 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors border border-gray-200">
+                                            Calculate ROI
+                                        </button>
+                                    </form>
+                                    
+                                    <div id="roi-results" class="hidden mt-6 p-6 bg-yellow-50 rounded-lg border border-yellow-200">
+                                        <h4 class="text-xl font-bold text-gray-900 mb-4">Your Potential Savings</h4>
+                                        <div class="grid grid-cols-3 gap-4">
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-gray-900" id="annual-loss">$0</div>
+                                                <div class="text-xs text-gray-600">Current Loss</div>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-gray-900" id="annual-savings">$0</div>
+                                                <div class="text-xs text-gray-600">Savings</div>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-gray-900" id="roi-multiple">10x</div>
+                                                <div class="text-xs text-gray-600">ROI</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Mascot for Slide 2 -->
+                            <div class="mascot-side mascot-slide-left">
+                                <img src="https://i.ibb.co/fGL6KBY2/Untitled-2.png" alt="nfrti X Mascot" class="mascot-image slider-mascot" loading="lazy">
+                                <div class="mascot-speech-bubble" id="roi-calculation-bubble" style="display:none;">
+                                    <span id="calculating-dots">Calculating<span class="dots"></span></span>
+                                    <span id="calculating-numbers" style="display:none;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="flex justify-center items-center gap-8 mt-12">
+                <button class="as-slider-left">
+                    <i class="fas fa-chevron-left text-2xl"></i>
+                </button>
+                
+                <div class="as-bar flex gap-3">
+                    <!-- Dots will be inserted by JavaScript -->
+                </div>
+                
+                <button class="as-slider-right">
+                    <i class="fas fa-chevron-right text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section (Placeholder for your material) -->
+    <section id="solution" class="py-16 bg-nfrti-green text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 custom-heading">Complete Predictive Maintenance Platform</h2>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <div class="relative">
+                        <img src="https://i.ibb.co/3ZHs18z/Untitled-4.png" alt="nfrti X Mascot - Installing Sensor on Pyramid Pump" class="object-contain mx-auto" style="width: 550px; height: 550px;" id="solution-mascot" loading="lazy">
+                        <div class="mascot-speech-bubble hidden bg-white text-gray-800" id="solution-speech">
+                            "Our sensors stand guard over your equipment. Use the form below to contact us."
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <p class="text-lg mb-6 text-white font-semibold">
+                        Real-time vibration monitoring and AI-powered fault detection that gives maintenance teams the insights they need to:
+                    </p>
+                    
+                    <!-- Key Benefits -->
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="bg-white/10 rounded-lg p-4 flex items-start">
+                            <span class="text-yellow-400 mr-3 text-xl">✓</span>
+                            <div class="text-white font-semibold">Detect bearing, misalignment, and unbalance faults weeks in advance</div>
+                        </div>
+                        <div class="bg-white/10 rounded-lg p-4 flex items-start">
+                            <span class="text-yellow-400 mr-3 text-xl">✓</span>
+                            <div class="text-white font-semibold">Prioritize maintenance activities based on real equipment health</div>
+                        </div>
+                        <div class="bg-white/10 rounded-lg p-4 flex items-start">
+                            <span class="text-yellow-400 mr-3 text-xl">✓</span>
+                            <div class="text-white font-semibold">Reduce unplanned downtime by up to 70%</div>
+                        </div>
+                        <div class="bg-white/10 rounded-lg p-4 flex items-start">
+                            <span class="text-yellow-400 mr-3 text-xl">✓</span>
+                            <div class="text-white font-semibold">Extend asset life and optimize spare parts inventory</div>
+                        </div>
+                        <div class="bg-white/10 rounded-lg p-4 flex items-start">
+                            <span class="text-yellow-400 mr-3 text-xl">✓</span>
+                            <div class="text-white font-semibold">Transform reactive maintenance into proactive operations</div>
+                        </div>
+                    </div>
+
+                    <p class="text-xl mt-8 text-white font-semibold">
+                        Our IIoT sensors install in minutes, with no wiring or complex setup. Data flows directly to your maintenance team's devices with automated alerts and actionable recommendations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Talk to Us / Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 custom-heading">Ready to Reduce Downtime?</h2>
+                <p class="text-lg text-gray-600">Whether you're interested in a pilot, exploring partnerships, or learning more about how nfrti X can transform your maintenance operations — let's talk.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Testimonials -->
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-gray-400 inline-block">Testimonials</h2>
+                    <div class="industry-card flex flex-col">
+                        <div class="text-3xl text-nfrti-green mb-2 font-serif">"</div>
+                        <blockquote class="text-base mb-4 italic leading-relaxed text-gray-800">
+                            Astounding performance! nfrti X's fault detection solution predicted bearing failure two months ahead of a leading global CBM player when tested on a use-case of our own.
+                        </blockquote>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mr-3 shadow-lg">
+                                <span class="text-gray-900 font-bold text-sm">CE</span>
+                            </div>
+                            <div>
+                                <p class="font-bold text-white text-base">CBM expert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="industry-card flex flex-col">
+                        <div class="text-3xl text-nfrti-green mb-2 font-serif">"</div>
+                        <blockquote class="text-base mb-4 italic leading-relaxed text-gray-800">
+                            nfrti X's locally manufactured wireless accelerometers fills a gap in the Egyptian market by making such technology accessible.
+                        </blockquote>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mr-3 shadow-lg">
+                                <span class="text-gray-900 font-bold text-sm">WE</span>
+                            </div>
+                            <div>
+                                <p class="font-bold text-white text-base">Water pumps expert</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <form id="myForm" action="https://script.google.com/macros/s/AKfycbyeLOW1IYFWLvkEPs36tadQ6xadJ4LDmac3CBCkMF818PWZxmJc6vfmQiWjzLzksrYV6A/exec" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                                <input type="text" name="first_name" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-nfrti-green focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                                <input type="text" name="last_name" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-nfrti-green focus:border-transparent">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                            <input type="email" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-nfrti-green focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Company</label>
+                            <input type="text" name="company" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-nfrti-green focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">I'm interested in *</label>
+                            <select name="interest" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-nfrti-green focus:border-transparent">
+                                <option value="">Select an option</option>
+                                <option value="Running a Pilot Project">Running a Pilot Project</option>
+                                <option value="Collaboration Opportunities">Collaboration Opportunities</option>
+                                <option value="Requesting a Demo">Requesting a Demo</option>
+                                <option value="Learning More About the Solution">Learning More About the Solution</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea name="message" rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-nfrti-green focus:border-transparent" placeholder="Tell us about your needs and how we can help..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-nfrti-green text-white py-3 rounded-lg font-semibold hover:bg-[#267347] transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                    
+                    <!-- Success Message (hidden by default) -->
+                    <div id="form-success" class="hidden mt-6 p-6 bg-[#017E3A10] border-2 border-[#017E3A] rounded-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-[#017E3A] text-3xl mr-4"></i>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Message Sent Successfully!</h4>
+                                <p class="text-gray-700">Thank you for contacting nfrti X. We'll get back to you shortly.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Error Message (hidden by default) -->
+                    <div id="form-error" class="hidden mt-6 p-6 bg-red-50 border-2 border-red-500 rounded-lg">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-exclamation-circle text-red-500 text-3xl mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-900 mb-2">Submission Failed</h4>
+                                    <p class="text-gray-700">There was an error sending your message. Please try again or reach out to us via social media:</p>
+                                </div>
+                            </div>
+                            <div class="flex space-x-4 mt-2 ml-14">
+                                <a href="https://eg.linkedin.com/company/nfrtix" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-nfrti-green transition-colors" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin text-2xl"></i>
+                                </a>
+                                <a href="https://www.facebook.com/nfrtiX/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-nfrti-green transition-colors" aria-label="Facebook">
+                                    <i class="fab fa-facebook text-2xl"></i>
+                                </a>
+                                <a href="https://www.instagram.com/nfrtix/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-nfrti-green transition-colors" aria-label="Instagram">
+                                    <i class="fab fa-instagram text-2xl"></i>
+                                </a>
+                                <a href="https://x.com/nfrtiX" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-nfrti-green transition-colors" aria-label="X (Twitter)">
+                                    <svg class="w-5 h-5 fill-current mt-0.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-12" style="background-color: #2b2b2b;">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <img src="images/nfrti-logo.png" alt="nfrti X" class="h-12 w-auto mb-4 object-contain" style="filter: brightness(0) invert(1);" loading="lazy">
+                    <p class="text-white mb-4">
+                        Ancient wisdom meets modern AI. Preventing industrial chaos through predictive maintenance.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-white">
+                        <li><a href="#home" class="hover:text-nfrti-green transition-colors">Home</a></li>
+                        <li><a href="#heritage" class="hover:text-nfrti-green transition-colors">Who's nfrti?</a></li>
+                        <li><a href="#problem" class="hover:text-nfrti-green transition-colors">The Maintenance Challenge</a></li>
+                        <li><a href="#solution" class="hover:text-nfrti-green transition-colors">The PdM Solution</a></li>
+                        <li><a href="#contact" class="hover:text-nfrti-green transition-colors">Talk to Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <a href="https://x.com/nfrtiX" target="_blank" rel="noopener noreferrer" class="text-white hover:text-nfrti-green transition-colors flex items-center" aria-label="X (Twitter)">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/nfrtiX/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-nfrti-green transition-colors" aria-label="Facebook">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nfrtix/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-nfrti-green transition-colors" aria-label="Instagram">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://eg.linkedin.com/company/nfrtix" target="_blank" rel="noopener noreferrer" class="text-white hover:text-nfrti-green transition-colors" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC2_htcw3PK3o6dg2iQznHfQ" target="_blank" rel="noopener noreferrer" class="text-white hover:text-nfrti-green transition-colors" aria-label="YouTube">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-white text-sm">
+                        © 2025 nfrti X. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Minified JavaScript Files - Deferred Loading -->
+    <script src="js/main.min.js" defer></script>
+    <script src="js/challenge-slider.min.js" defer></script>
+</body>
+</html>
