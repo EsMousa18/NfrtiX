@@ -1,6 +1,3 @@
-// nfrti X Challenge Slider - Flowy Version
-// Simple, elegant slider without complex dependencies
-
 (function() {
     'use strict';
     
