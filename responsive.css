@@ -1,4 +1,3 @@
-/* Responsive Design for nfrti X Website */
 
 /* Mobile First Approach */
 
@@ -405,11 +404,6 @@
         animation-iteration-count: 1 !important;
         scroll-behavior: auto !important;
     }
-}
-
-/* Dark Mode Support (if needed in future) */
-@media (prefers-color-scheme: dark) {
-    /* Currently using light theme only, but structure is here for future enhancement */
 }
 
 /* Print Styles */
